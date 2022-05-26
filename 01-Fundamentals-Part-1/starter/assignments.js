@@ -1,7 +1,7 @@
 //LECTURE: Values and Variables
 const country = "Mexico";
 const continent = "America";
-let population = "128.9 Millons";
+let population = 128.9;
 console.log(country);
 console.log(continent);
 console.log(population);
@@ -18,3 +18,20 @@ console.log(language);
 language = "Spanish";
 
 //LECTURE: Basic Operators
+//1.-
+console.log(population);
+const halfPopulation = population / 2;
+console.log(halfPopulation);
+//2.-
+console.log((population += 1));
+//3.-
+const finlandPopulation = 6;
+console.log(population > finlandPopulation);
+//4.-
+const averagePopulation = 33;
+console.log(population < averagePopulation);
+//5.-
+const description =
+  "Mexico is in America, and it's 128.9 million people speak spanish";
+
+//LECTURE: Strings and Template Literals
