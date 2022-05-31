@@ -32,6 +32,27 @@ const averagePopulation = 33;
 console.log(population < averagePopulation);
 //5.-
 const description =
-  "Mexico is in America, and it's 128.9 million people speak spanish";
-
+  country +
+  " is in " +
+  continent +
+  ", and it's " +
+  population +
+  " million people speak " +
+  language;
+console.log(description);
 //LECTURE: Strings and Template Literals
+
+const descriptionNew = `${country} is in ${continent}, and it's ${population} million people speak ${language}`;
+console.log(descriptionNew);
+
+//LECTURE: If-Else statements
+
+if (population > 33) {
+  console.log(`${country} population is above average.`);
+} else {
+  console.log(
+    `${country} population is ${33 - population} million below average`
+  );
+}
+
+//LECTURE: Type Conversion and Coercion
