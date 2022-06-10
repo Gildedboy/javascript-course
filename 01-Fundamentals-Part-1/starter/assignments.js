@@ -7,7 +7,7 @@ console.log(continent);
 console.log(population);
 
 //LECTURE: Data Types
-let isIsland = false;
+const isIsland = false;
 let language;
 console.log(isIsland);
 console.log(population);
@@ -15,7 +15,7 @@ console.log(country);
 console.log(language);
 
 //LECTURE: let const and var
-language = "Spanish";
+language = "spanish";
 
 //LECTURE: Basic Operators
 //1.-
@@ -23,7 +23,7 @@ console.log(population);
 const halfPopulation = population / 2;
 console.log(halfPopulation);
 //2.-
-console.log((population += 1));
+//console.log((population += 1));
 //3.-
 const finlandPopulation = 6;
 console.log(population > finlandPopulation);
@@ -63,15 +63,27 @@ console.log("123" < 57); // False - Boolean
 console.log(5 + 6 + "4" + 9 - 4 - 2); // 1143 - Number
 
 //LECTURE: Equality Operators: == vs. ===
-const numNeighbours = Number(
-  prompt(`How many neighbour countries does your country 
-have?`)
-);
+// const numNeighbours = Number(
+//   prompt(`How many neighbour countries does your country
+// have?`)
+// );
 
-if (numNeighbours === 1) {
-  console.log(`Only 1 border!`);
-} else if (numNeighbours > 1) {
-  console.log(`More than 1 border`);
+// if (numNeighbours === 1) {
+//   console.log(`Only 1 border!`);
+// } else if (numNeighbours > 1) {
+//   console.log(`More than 1 border`);
+// } else {
+//   console.log(`No borders`);
+// }
+
+//LECTURE: Logical Operators, AND OR NOT
+//Let's say Sarah is looking for a new country to live in. She wants to live in a country that speaks english, has less than 50 million people and is not an island.
+// english = true, less than 50 million and !island
+console.log(
+  `${country} has ${population} million habitants, the main language is ${language} and ${isIsland}`
+);
+if (language === "english" && population < 50 && !isIsland) {
+  console.log(`You should live in ${country} :)`);
 } else {
-  console.log(`No borders`);
+  console.log(`${country} doesn't meet your criteria :(`);
 }
