@@ -127,3 +127,8 @@ switch (language) {
     console.log(`Great language too :D`);
     break;
 }
+
+//LECTURE: TERNARY OPERATOR
+console.log(
+  `Mexico population is ${population >= 33 ? `above` : `below`} average`
+);
